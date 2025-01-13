@@ -1,0 +1,54 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-custom {
+  background-image: url('../img/bg-head.png');
+  border-bottom: 2px solid red; /* Đường kẻ dưới màu đỏ */
+}
+
+.top-info {
+  background-color: none; /* Màu nền giống navbar */
+  overflow: hidden; /* Ngăn phần tử ra ngoài khu vực */
+}
+
+.top-info .container {
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: flex-end; /* Căn phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  flex-wrap: nowrap; /* Ngăn không cho nội dung bị chia dòng */
+  padding: 0; /* Xóa padding nếu cần */
+  width: 100%; /* Đảm bảo container có chiều rộng đầy đủ */
+}
+
+.top-info .container > div {
+  display: flex; /* Đảm bảo rằng các phần tử con nằm trên cùng một dòng */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#current-date {
+  white-space: nowrap; /* Ngăn không cho ngày tháng bị xuống dòng */
+}
+
+.top-info span {
+  margin: 0; /* Xóa margin cho tất cả các span */
+  white-space: nowrap; /* Ngăn các phần tử span xuống dòng */
+  color: black;
+}
+
+/* Thêm khoảng cách giữa các phần tử */
+.top-info .container > div span + span {
+  margin-left: 8px; /* Thay đổi khoảng cách giữa các span nếu cần */
+}
+
+.top-info a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background-image: url('../img/bg-footer.png');
+  color: black;
+}
+
